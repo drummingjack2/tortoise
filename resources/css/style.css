@@ -69,11 +69,91 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   justify-content: space-between;
   margin-left: 3rem;
   margin-right: 3rem;
+  text-align: center;
 }
 #icons .item img{
   width: 3.5rem;
+}
+#icons .long img{
+  width: 5rem;
+}
+
+#info-container{
+  display: flex;
+  justify-content: center;
+}
+#info{
+display: inline-flex;
+width: 960px;
+justify-content: space-around;
+}
+#info h2{
+  background-color: cadetblue;
+  color: white;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+#info p{
+
+}
+.infoitem{
+  width: 35vw;
+  margin-right: 5vw;
+}
+
+#footer-container{
+  display: flex;
+  justify-content: center;
+}
+#footer{
+  background-color: azure;
+  margin-top: 5rem;
+  display: inline-flex;
+  align-items: center;
+  width: 960px;
+}
+#footer img{
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 960px){
+  /*For Tablets*/
+  #banner{
+    height: 22rem;
+  }
+  #header{
+    background-color: green;
+    margin-top: 0rem;
+  }
+  #slogan{
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  #slogan h1{
+    margin: 0.75rem 4rem 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 480px){
+  /*For Phones*/
+
+  #header{
+    background-color: red;
+  }
+  #banner{
+    background-image: url("../glasses-bg.png");
+    background-position: 20%;
+    height: 17rem;
+  }
+
+
 }
